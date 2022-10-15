@@ -1,0 +1,51 @@
+.sidebar {
+  position: absolute;
+  width: 25%;
+  background-color: white;
+  top: 0%;
+  left: 0%;
+  z-index: 103;
+  margin-top: 0%;
+  height: 100vh;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 35%);
+}
+
+// .spinner_overlay {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: black;
+//   opacity: 0.4;
+//   z-index: 105;
+// }
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+
+
+.cross-btn {
+  margin-right: 10%;
+}
+
+
+
+@media screen and (max-width:480px) {
+  .sidebar {
+    width: 100%;
+    box-shadow: none;
+  }
+}

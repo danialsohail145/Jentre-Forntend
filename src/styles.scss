@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/scss/variable.scss';
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+// Font Ends
+* {
+  font-family: 'Quicksand', sans-serif;
+  color: $text-primary-color;
+  text-transform: uppercase !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.no-link-style {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.no-link-style:hover {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.no-link-style:visited {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}

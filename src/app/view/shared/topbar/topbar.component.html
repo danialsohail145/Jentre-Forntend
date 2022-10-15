@@ -1,0 +1,22 @@
+<div class="nav-bar" (scroll)="onScroll($event)">
+    <div [ngClass]="showSideBar ? 'side-animation slide-in': 'side-animation slide-out'">
+        <app-side-bar [isActive]="firstActive" (notActive)="addItem($event)"></app-side-bar>
+    </div>
+    <nav class="shadow p-3 bg-white ">
+        <div class="container mt-1">
+            <div class="d-flex">
+                <div class="col-2 mt-3 cursor-pointer">
+                    <h3 (click)="activeSidebar()"><i class="fa fa-bars"></i></h3>
+                </div>
+                <div class="col-8 text-center">
+                    <img src="/assets/logo/logo.png" width="70px">
+                </div>
+                <div class="col-2 mt-3">
+                    <h3>
+                        <i class="fa fa-shopping-bag"></i>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

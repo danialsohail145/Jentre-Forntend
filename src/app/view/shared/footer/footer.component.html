@@ -1,0 +1,22 @@
+<footer class="w-100 shadow-lg">
+    <div class="footer-bar mt-5 mb-5"></div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 col-12" *ngFor="let footerlink of FOOTER_JSON">
+                <h3 class="text-center">
+                    {{footerlink.title}}
+                </h3>
+                <ul class="no-list-style" *ngFor="let link of footerlink.elements">
+                    <li>{{link}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img src="/assets/footer/master.png" width="80px">
+            <img src="/assets/footer/visa.png" width="80px">
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>COPYRIGHT &copy; 2022, JENTRE</p>
+        </div>
+    </div>
+</footer>
